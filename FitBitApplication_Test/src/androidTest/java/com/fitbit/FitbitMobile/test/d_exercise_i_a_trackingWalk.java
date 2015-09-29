@@ -9,7 +9,7 @@ import com.robotium.solo.Solo;
 public class d_exercise_i_a_trackingWalk extends ActivityInstrumentationTestCase2 {
     private Solo solo;
 
-    private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "com.fitbit.onboarding.landing.LandingActivity_";
+    private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "com.fitbit.onboarding.landing.LandingActivity";
 
     private static Class<?> launcherActivityClass;
 
@@ -67,14 +67,7 @@ public class d_exercise_i_a_trackingWalk extends ActivityInstrumentationTestCase
         solo.clickOnView(solo.getView("track_type"));
         //Click on Walk
         solo.clickOnView(solo.getView(android.R.id.text1, 1));
-        //Click on Walk
-        solo.clickOnView(solo.getView("track_type"));
-        //Click on Hike
-        solo.clickOnView(solo.getView(android.R.id.text1, 2));
-        solo.clickOnView(solo.getView("track_type"));
-        //Click on Hike
-        solo.clickOnView(solo.getView(android.R.id.text1));
-
+        solo.sleep(500);
 
 
 
